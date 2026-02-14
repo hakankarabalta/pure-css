@@ -1,0 +1,29 @@
+a {
+  text-decoration: none;
+  
+}
+
+
+
+button {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 0;
+    background: transparent;
+}
+
+
+
+.btn-01 {
+  background-color:#ef3356;
+  color: #000;
+  border: 1px solid #ef3356;
+  font-weight: 400;
+  transition: transform 0.5s ease;
+  
+}
+
+.btn-01:hover {
+  background-color: transparent;
+  transform: scale(0.95);
+}
