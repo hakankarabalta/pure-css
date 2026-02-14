@@ -1,6 +1,10 @@
+/* buttons reset global */
+
+
 a {
   text-decoration: none;
-  
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 
@@ -13,17 +17,27 @@ button {
 }
 
 
+/* first section buttons  */
 
 .btn-01 {
   background-color:#ef3356;
-  color: #000;
+  color: #fff;
+  border-radius :20px;
   border: 1px solid #ef3356;
   font-weight: 400;
   transition: transform 0.5s ease;
-  
+  padding: 10px;
 }
-
+ 
 .btn-01:hover {
   background-color: transparent;
   transform: scale(0.95);
+}
+
+.btn-02 {
+  padding:10px;
+  font-weight: 400;
+  border-radius: 20px;
+  color: #fff;
+  border: 1px solid #ef3356;
 }
