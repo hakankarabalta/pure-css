@@ -13,3 +13,8 @@
     width : 100dvw;
 }
 
+
+html {
+    scroll-behavior: smooth;
+}
+
