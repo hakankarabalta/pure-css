@@ -13,8 +13,6 @@ Instead of a single monolithic page, this project follows a **component-based ap
 ## 📱 Highlights: Responsive Hero Section
 One of the core components in this project is a highly adaptive **Hero Section**. It features specific logic for different viewing contexts:
 * **Standard View:** Balanced height for readability.
-* **Desktop Optimized:** Refined height ($30vh$) for large screens.
-* **Landscape Mode:** Custom adjustments for mobile devices in landscape orientation to ensure the `hero-title` remains impactful.
 
 ## 🚀 How to Use
 1. Clone the repository.
