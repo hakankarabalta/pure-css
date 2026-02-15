@@ -1,0 +1,45 @@
+#carrosel-auto {
+  display: flex;
+  background-color:#2f2f33;
+  height: 100dvh;
+  width: 100dvw;
+  flex-direction: column;
+  position: relative;
+  overflow:hidden;
+}
+
+
+
+.carrosel-header {
+  color: #f5f6f7;
+  text-align: center;
+}
+
+.carrosel-auto-track {
+  display: flex;
+  /* if your three slide change 300% */
+  width: 400%;
+  height: 100%;
+  animation: slide-anim 12s infinite;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+}
+
+@keyframes slide-anim {
+  0%, 25% { transform: translateX(0); }             /* 1. Görsel duruyor */
+  30%, 55% { transform: translateX(-25%); }       /* 2. Görsele geç ve dur */
+  60%, 85% { transform: translateX(-50%); }       /* 3. Görsele geç ve dur */
+  90%, 100% { transform: translateX(-75%); }      /* Başa dönmek için hazırlık */
+}
+
+
+.bg-1 {background-image: url('assets/bg');}
+
