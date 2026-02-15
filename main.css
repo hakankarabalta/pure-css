@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+:root {
+    --passion: "Passion One";
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -17,4 +24,9 @@
 html {
     scroll-behavior: smooth;
 }
+
+.bg-1 {background-image: url('assets/bg-01.jpg');}
+.bg-2 {background-image: url('assets/bg-02.jpg');}
+.bg-3 {background-image: url('assets/bg-03.jpg');}
+.bg-4 {background-image: url('assets/bg-04.jpg');}
 
