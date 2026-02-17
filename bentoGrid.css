@@ -1,3 +1,6 @@
+@import url('main.css');
+
+
 #bento-grid {
   display:flex;
   flex-direction: column;
@@ -15,6 +18,9 @@
   width: 100%;
   color: #acc8a2;
   font-family: var(--passion);
+  animation: reveal-bottom linear;
+  animation-timeline: view();
+  animation-range: entry 20% cover 50%;
 }
 
 .bento-container {
