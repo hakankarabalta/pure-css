@@ -1,7 +1,12 @@
+/* MANROPE google font */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+/* PASSION ONE google font */
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
 :root {
     --passion: "Passion One";
+    --manrope: "Manrope";
 }
 
 
