@@ -17,18 +17,23 @@
     
 }
 
-
-
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100dvh;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
 
 .wrapper {
     height: 100dvh;
-    width : 100dvw;
+    width : 100dvw;          
+    scroll-snap-align: start; 
+    scroll-snap-stop: always;
 }
 
-
-html {
-    scroll-behavior: smooth;
-}
 
 .bg-1 {background-image: url('assets/bg-01.jpg');}
 .bg-2 {background-image: url('assets/bg-02.jpg');}
