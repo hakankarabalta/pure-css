@@ -17,7 +17,7 @@
   font-size: 3rem;
   animation: reveal-left linear;
   animation-timeline: view();
-  animation-range: entry 50% cover 70%;
+  animation-range: entry 50% cover 99%;
 }
 
 .carrosel-auto-track {
