@@ -55,3 +55,10 @@
   color: #acc8a2;
 }
 
+@media (orientation: landscape) {
+  
+.bento-container {
+  grid-auto-rows: minmax(50px, auto);
+  grid-template-columns: repeat(4, 1fr);
+}
+}
