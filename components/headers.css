@@ -6,3 +6,12 @@
   text-transform: uppercase;
 }
 
+.scroller-title {
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: 500;
+  font-family: var(--passion);
+  font-size: clamp(3rem, 4dvh, 4rem);
+  color:#c96a4a;
+}
+

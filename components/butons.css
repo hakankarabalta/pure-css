@@ -41,3 +41,20 @@ button {
   color: #fff;
   border: 1px solid #ef3356;
 }
+
+.btn-03 {
+  padding: 10px;
+  color: #1c1f24;
+  font-weight: 400;
+  font-family: passion;
+  background-color: #c96a4a;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(201, 106, 74, 0.6);
+}
+
+.btn-03:hover {
+  box-shadow: none;
+  transform: scale(0.98);
+  
+}
+

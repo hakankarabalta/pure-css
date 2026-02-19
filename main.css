@@ -32,6 +32,8 @@ html, body {
     width : 100dvw;          
     scroll-snap-align: start; 
     scroll-snap-stop: always;
+    position: relative;
+    z-index: 0;
 }
 
 
@@ -65,5 +67,9 @@ html, body {
     }
 }
 
+@keyframes scrollLeft {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
 
 

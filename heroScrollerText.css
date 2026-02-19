@@ -1,0 +1,63 @@
+@import url('main.css');
+
+#hero-scroller {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: -1;
+  background-color: #1c1f24;
+}
+
+.background-text {
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+}
+
+.background-text > span {
+  background: linear-gradient(to right, #1c1f24, #c96a4a);
+ color: transparent;
+  background-clip: text;
+  opacity: 0.7;
+  font-size: clamp(2rem, 8dvh, 5rem);
+  white-space: nowrap;
+  animation: scrollLeft 160s linear infinite;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: var(--passion);
+}
+
+.background-text > span:nth-child(even) {
+  animation-direction: reverse;
+  opacity: 0.2;
+  background: linear-gradient(to left, #c96a4a 10%, #1c1f24 90%);
+  color: transparent;
+  background-clip: text;
+}
+
+.scroller-content {
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-top:25dvh;
+  position: relative;
+  gap: 10px;
+  
+}
+
+.scroller-text {
+  color: #c96a4a;
+  font-weight: 300;
+  font-family: var(--manrope);
+  margin-bottom: 100px;
+}
+
+
+
