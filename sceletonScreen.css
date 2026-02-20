@@ -1,0 +1,81 @@
+@import url('main.css');
+
+#sceleton-screen {
+  height: 100dvh;
+  width: 100dvw;
+}
+
+.sceleton-title {
+  text-align: center;
+  padding-top: 14dvh;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.sceleton-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 5%;
+}
+
+.sceleton-image, .sceleton-desc, .sceleton-text > p, .sceleton-header {
+  background: linear-gradient(
+    90deg, #222 25%, 
+    #333 50%, 
+   #222 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+  border-radius: 8px;
+}
+
+.sceleton-header {
+  height: 26px;
+  width: 60%;
+  margin-bottom: 10px;
+}
+
+.sceleton-image {
+  width: clamp(330px, 60vw, 600px);
+  height: 200px;
+  margin-bottom: 15px;
+}
+
+.sceleton-desc {
+  width: 60%;
+  height: 20px;
+}
+
+.sceleton-text {
+  flex-grow: 1;
+  margin-top: 10px;
+  width: 100%;
+  
+}
+
+.sceleton-text > p {
+  line-height: 2.2;
+  display: inline;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  padding: 4px 0; 
+  color: transparent;
+}
+  
+
+.sceleton-text::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.05),
+    transparent
+  );
+  transform: translateX(-100%);
+  animation: shimmer 2s infinite;
+
+}
