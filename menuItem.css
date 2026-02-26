@@ -1,0 +1,78 @@
+@import url('main.css');
+
+:root {
+  --container-height: 90%;
+  --container-width:100%;
+  --header-size:2rem;
+}
+
+.container-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-header {
+  font-size: var(--header-size);
+  height: 5dvh;
+  
+}
+
+.container-content {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: 95dvh;
+}
+
+.container-navbar {
+  width: 100%;
+}
+
+.container-items {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.product-item {
+  display: flex;
+  width: clamp(300px, 90%, 500px);
+  height: 80px;
+}
+
+.item-img {
+  height: 100%;
+  width: 80px;
+}
+
+.item-img > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.item-header {
+  font-size: 1rem;
+}
+
+.item-review {
+  display: flex;
+  flex-direction: row;
+  gap:5px;
+}
+
+.item-options {
+  display: flex;
+  flex-direction: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 10px;
+}
+
