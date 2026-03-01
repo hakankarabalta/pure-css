@@ -34,7 +34,25 @@
   height: 70px;
   border-bottom: 2px solid rgba(45, 45, 50, 0.4);
   margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
 }
+
+.nav-left {
+  height: 100%;
+}
+
+.nav-right {
+  height: 100%;
+  padding-right: 20px;
+}
+
+.nav-right > h4 {
+  font-size: 2.5rem;
+  color: rgba(45, 45, 50, 0.4);
+  
+}
+
 .container-items {
   display: flex;
   height:600px;
@@ -45,48 +63,111 @@
 
 .product-item {
   display: flex;
+  padding-left: 10px;
   width: clamp(300px, 90%, 500px);
   height: 200px;
-  background-color: red;
   padding: 10px;
+  margin-left: 20px;
+  border-bottom: 1px solid rgba(45, 45, 50, 0.4);
 }
 
 .item-img {
   height: 100%;
   width: 150px;
-  background-color:green;
   border-radius: 50%;
+  background-image: url('assets/shoes.png');
+  background-position: center;
+  background-size:cover;
 }
 
 .item-img > img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  
 }
 
 .item-content {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   gap: 5px;
-  align-items: end;
 }
 
 .item-header {
-  font-size: 1rem;
-  background-color: yellow;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 10px;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  font-family: sans-serif;
 }
 
 .item-review {
   display: flex;
   flex-direction: row;
   gap:5px;
+  padding-left: 10px;
+  color: #DDDC2B;
+  font-size: 1.3rem;
 }
 
-.item-options {
-  display: flex;
-  flex-direction: wrap;
-  flex-wrap: wrap;
-  width: 100%;
-  padding: 10px;
+.size-container {
+  font-family: sans-serif;
+  max-width: 100%;
+  padding-left: 5px;
 }
+
+.size-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25px, 1fr)); /* Esnek ızgara */
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Radyo butonunu tamamen gizle */
+.size-item input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Kutucuk Tasarımı */
+.size-item label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 10px;
+  min-width: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Üzerine gelince (Hover) */
+.size-item label:hover {
+  border-color: #000;
+}
+
+/* SEÇİLDİĞİNDE: Siyah arka plan, beyaz yazı */
+.size-item input[type="radio"]:checked + label {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+  font-weight: bold;
+}
+
+/* STOKTA YOKSA (Disabled) */
+.size-item input:disabled + label {
+  background-color: #f9f9f9;
+  color: #ccc;
+  border-color: #eee;
+  cursor: not-allowed;
+  text-decoration: line-through; /* Üzerini çiz */
+}
+
 
